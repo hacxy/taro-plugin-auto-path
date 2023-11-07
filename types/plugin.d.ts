@@ -8,6 +8,7 @@ export declare class Plugin {
     constructor(ctx: IPluginContext, options: AutoPathConfig);
     loadConfig(): Promise<void>;
     log(type: LogTypeEnum, message: string): void;
+    watch(): void;
     autoRegister(): Promise<void>;
     onBuildStart(): this;
     registerCommand(): this;

@@ -1,3 +1,4 @@
+import * as path from 'path'
 import { IPluginContext } from '@tarojs/service'
 import { AutoPathConfig, IConfigModel } from './types'
 import { LogTypeEnum } from './constant'
@@ -23,6 +24,22 @@ export class Plugin {
 
   log(type: LogTypeEnum, message: string) {
     this.ctx.helper.printLog(type as any, message)
+  }
+
+  watch() {
+    this.ctx.helper.chokidar
+      .watch(
+        [
+          path.join(this.ctx.paths.sourcePath, 'pages/**/index.tsx'),
+          path.join(
+            this.ctx.paths.sourcePath,
+            `${this.options.subPackageDir}/*/*/index.tsx`
+          ),
+        ],
+        { ignoreInitial: true }
+      )
+      .on('add', () => this.autoRegister())
+      .on('unlink', () => this.autoRegister())
   }
 
   async autoRegister() {
@@ -56,8 +73,9 @@ export class Plugin {
   }
 
   onBuildStart() {
-    this.ctx.onBuildStart(() => {
-      this.autoRegister()
+    this.ctx.onBuildStart(async () => {
+      await this.autoRegister()
+      this.watch()
     })
     return this
   }
