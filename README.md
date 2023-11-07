@@ -1,4 +1,4 @@
-# taro-plugin-auto-pages
+# taro-plugin-auto-path
 
 > 
 
