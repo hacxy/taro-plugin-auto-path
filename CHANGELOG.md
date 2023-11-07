@@ -1,5 +1,17 @@
 # Changelog
 
+## [0.0.3](https://github.com/loclink/taro-plugin-auto-path/compare/v0.0.2...v0.0.3) (2023-11-07)
+
+
+### 🐛 Bug Fixes | Bug 修复
+
+* 修复开发时依赖缺失 ([d1ff3d5](https://github.com/loclink/taro-plugin-auto-path/commit/d1ff3d566b9cce1a9b69bf5126c0cc81e74db5e6))
+
+
+### 🌈 Styles | 风格
+
+* 修改类型名称 ([efd7be6](https://github.com/loclink/taro-plugin-auto-path/commit/efd7be6be8af622ce7dc289c424d3e69d0f9f58a))
+
 ## [0.0.2](https://github.com/loclink/taro-plugin-auto-path/compare/v0.0.1...v0.0.2) (2023-11-07)
 
 

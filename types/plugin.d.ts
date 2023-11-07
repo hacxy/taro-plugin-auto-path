@@ -1,11 +1,11 @@
 import { IPluginContext } from '@tarojs/service';
-import { AutoPagesConfig, IConfigModel } from './types';
+import { AutoPathConfig, IConfigModel } from './types';
 import { LogTypeEnum } from './constant';
 export declare class Plugin {
     readonly ctx: IPluginContext;
-    readonly options: AutoPagesConfig;
+    readonly options: AutoPathConfig;
     appConfigModel?: IConfigModel;
-    constructor(ctx: IPluginContext, options: AutoPagesConfig);
+    constructor(ctx: IPluginContext, options: AutoPathConfig);
     loadConfig(): Promise<void>;
     log(type: LogTypeEnum, message: string): void;
     autoRegister(): Promise<void>;

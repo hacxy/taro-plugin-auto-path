@@ -1,8 +1,8 @@
 import type { IPluginContext } from '@tarojs/service';
-import { AutoPagesConfig } from './types';
+import { AutoPathConfig } from './types';
 /**
  * 命令行扩展
  */
-declare const _default: (ctx: IPluginContext, pluginOpts: AutoPagesConfig) => void;
+declare const _default: (ctx: IPluginContext, pluginOpts: AutoPathConfig) => void;
 export default _default;
-export { AutoPagesConfig };
+export { AutoPathConfig };
