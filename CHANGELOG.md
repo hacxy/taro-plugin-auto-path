@@ -1,5 +1,17 @@
 # Changelog
 
+## [0.0.2](https://github.com/loclink/taro-plugin-auto-path/compare/v0.0.1...v0.0.2) (2023-11-07)
+
+
+### 📝 Documentation | 文档
+
+* 更新readme ([b59b44c](https://github.com/loclink/taro-plugin-auto-path/commit/b59b44cbd1bf213efb2d75045f41d49ae1c07f82))
+
+
+### 🛠️ Continuous Integration | CI 配置
+
+* 更新release-it配置 ([b9a560f](https://github.com/loclink/taro-plugin-auto-path/commit/b9a560fc04a0e1328acf4c6726fedeb3c6026783))
+
 ## 0.0.1 (2023-11-07)
 
 
