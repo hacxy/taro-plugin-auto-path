@@ -18,7 +18,7 @@
   "plugins": {
     "@release-it/conventional-changelog": {
       "ignoreRecommendedBump": true,
-      "infile": "modules/wm-taro-template-docs/docs/changelog/index.md",
+      "infile": "CHANGELOG.md",
       "header": "# Changelog",
       "preset": {
         "name": "conventionalcommits",
