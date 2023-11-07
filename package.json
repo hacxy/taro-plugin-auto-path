@@ -22,7 +22,8 @@
   },
   "scripts": {
     "build": "tsc",
-    "dev": "tsc -w"
+    "dev": "tsc -w",
+    "release": "dotenv release-it"
   },
   "bugs": {
     "url": ""

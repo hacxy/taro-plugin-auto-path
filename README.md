@@ -6,7 +6,7 @@
 
 ### 安装
 ```
-npm i taro-plugin-auto-pages -D
+npm i taro-plugin-auto-path -D
 ```
 
 ### 使用插件
