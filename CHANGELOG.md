@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.0.4](https://github.com/loclink/taro-plugin-auto-path/compare/v0.0.3...v0.0.4) (2023-11-07)
+
+
+### ✨ Features | 新功能
+
+* 新增文件监听 ([6863043](https://github.com/loclink/taro-plugin-auto-path/commit/6863043e5f9c5503894f85265f6986d662d3c551))
+
 ## [0.0.3](https://github.com/loclink/taro-plugin-auto-path/compare/v0.0.2...v0.0.3) (2023-11-07)
 
 
