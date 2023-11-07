@@ -2,7 +2,7 @@ import * as path from 'path'
 import * as fs from 'fs-extra'
 import { Project, IndentationText } from 'ts-morph'
 import { IPluginContext } from '@tarojs/service'
-import type { AutoPagesConfig, IConfigModel, LoadConfig } from './types'
+import type { AutoPathConfig, IConfigModel, LoadConfig } from './types'
 
 export const loadConfig: LoadConfig = (
   path: string,
@@ -78,13 +78,13 @@ export function getPagesPath(ctx: IPluginContext) {
   return path.resolve(ctx.paths.sourcePath, 'pages')
 }
 
-export function getTabbarPath(ctx: IPluginContext, options: AutoPagesConfig) {
+export function getTabbarPath(ctx: IPluginContext, options: AutoPathConfig) {
   return path.resolve(ctx.paths.sourcePath, `pages/${options.tabbarDir}`)
 }
 
 export function getSubPackagePath(
   ctx: IPluginContext,
-  options: AutoPagesConfig
+  options: AutoPathConfig
 ) {
   return path.resolve(ctx.paths.sourcePath, options.subPackageDir)
 }
@@ -92,7 +92,7 @@ export function getSubPackagePath(
 /** 生成分包路径配置 */
 export async function generateSubPackagePaths(
   ctx: IPluginContext,
-  options: AutoPagesConfig
+  options: AutoPathConfig
 ) {
   const subPackagePath = await getSubPackagePath(ctx, options)
   if (!fs.pathExistsSync(subPackagePath)) return []
@@ -131,7 +131,7 @@ export async function generateSubPackagePaths(
 /** 生成tabbar路径配置 */
 export const generateTabbarPaths = async (
   ctx: IPluginContext,
-  options: AutoPagesConfig
+  options: AutoPathConfig
 ) => {
   const tabbarPath = getTabbarPath(ctx, options)
 
@@ -165,7 +165,7 @@ export const generateTabbarPaths = async (
 /** 生成主包路径配置 */
 export async function generateMainPackagePaths(
   ctx: IPluginContext,
-  options: AutoPagesConfig
+  options: AutoPathConfig
 ) {
   const tabbarPaths = await generateTabbarPaths(ctx, options)
 

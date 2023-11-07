@@ -1,4 +1,4 @@
-export interface AutoPagesConfig {
+export interface AutoPathConfig {
   /**
    * @description 首页路径，自动注册页面时会将此路径排列至首位
    */

@@ -1,5 +1,5 @@
 import { IPluginContext } from '@tarojs/service'
-import { AutoPagesConfig, IConfigModel } from './types'
+import { AutoPathConfig, IConfigModel } from './types'
 import { LogTypeEnum } from './constant'
 import {
   generateMainPackagePaths,
@@ -12,7 +12,7 @@ export class Plugin {
 
   constructor(
     public readonly ctx: IPluginContext,
-    readonly options: AutoPagesConfig
+    readonly options: AutoPathConfig
   ) {
     this.loadConfig()
   }
