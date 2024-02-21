@@ -1,5 +1,17 @@
 # Changelog
 
+## [0.0.5](https://github.com/loclink/taro-plugin-auto-path/compare/v0.0.4...v0.0.5) (2024-02-21)
+
+
+### 📝 Documentation | 文档
+
+* 更新readme ([cbd4746](https://github.com/loclink/taro-plugin-auto-path/commit/cbd4746a42f388f13673f33c23949cf83fb135e1))
+
+
+### 🔄 Code Refactoring | 代码重构
+
+* 插件可配置化 ([aa98c6b](https://github.com/loclink/taro-plugin-auto-path/commit/aa98c6b23b4400dd46fffc7df58dcf8f661f1a64))
+
 ## [0.0.4](https://github.com/loclink/taro-plugin-auto-path/compare/v0.0.3...v0.0.4) (2023-11-07)
 
 
