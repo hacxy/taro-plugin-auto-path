@@ -1,6 +1,6 @@
 export interface AutoPathOptions {
   /**
-   * @description 首页路径，自动注册页面时会将此路径排列至首位
+   * 首页路径，自动注册页面时会将此路径排列至首位
    */
   homePath: string;
 
@@ -9,13 +9,13 @@ export interface AutoPathOptions {
    */
   mainPackage: {
     /**
-     * 监听主包页面存放的根路径
+     * 监听主包页面存放的根路径  默认值对应路径: /src/pages
      * @default pages
      */
     rootDir?: string;
 
     /**
-     * tabbar页面存放路径
+     * tabbar页面存放路径 默认值对应路径: /src/pages/tababr
      * @default tabbar
      */
     tabbarDir?: string;
@@ -26,7 +26,7 @@ export interface AutoPathOptions {
    */
   subPackage?: {
     /**
-     * 分包页面存放的根路径
+     * 分包页面存放的根路径 默认值对应路径 /src/pages-sub
      * @default pages-sub
      */
     rootDir?: string;
