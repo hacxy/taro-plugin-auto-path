@@ -1,17 +1,37 @@
-export interface AutoPathConfig {
+export interface AutoPathOptions {
   /**
    * @description 首页路径，自动注册页面时会将此路径排列至首位
    */
-  homePath: string
+  homePath: string;
+
   /**
-   * @description
+   * 主包页面路径配置
    */
-  tabbarDir: string
+  mainPackage: {
+    /**
+     * 监听主包页面存放的根路径
+     * @default pages
+     */
+    rootDir?: string;
 
-  subPackageDir: string
+    /**
+     * tabbar页面存放路径
+     * @default tabbar
+     */
+    tabbarDir?: string;
+  };
+
+  /**
+   * 分包页面路径配置
+   */
+  subPackage?: {
+    /**
+     * 分包页面存放的根路径
+     * @default pages-sub
+     */
+    rootDir?: string;
+  };
 }
-
-
 
 export interface IConfigModel {
   getConfigStr: () => string;
